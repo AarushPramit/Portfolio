@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <h1 class="intro-text">My Portfolio</h1>
+  </div>
+
+  <main>
+
+    <!-- ✅ FIXED ABOUT SECTION -->
+    <section class="about">
+      <div class="container about-container">
+
+        <!-- TEXT -->
+        <div class="about-text reveal">
+          <p class="tag">About me</p>
+
+          <h1>
+            
+            Designer<br>
+            Strategist.<br>
+            Creative partner.
+            
+          </h1>
+
+          <h3 class="subheading">
+            Bridging AI and UI/UX to create meaningful digital experiences.
+          </h3>
+
+          <p class="description">
+            My name is Aarush Pramit. I am a product designer based in Hyderabad, India. I focus on blending technology with design to build intuitive and impactful experiences. Music plays a huge role in my creative process.
+          </p>
+
+          <div class="about-contact">
+           <p>Phone no: +91 9182372506</p>
+           <p>email id: <a href="mailto:aarushpramit061205@gmail.com">aarushpramit061205@gmail.com</a></p>
+           <p>Linkedin: <a href=" https://www.linkedin.com/in/aarush-pramit-880794281/" target="_blank">https://www.linkedin.com/in/aarush-pramit-880794281/</a></p>
+        </div>
+        </div>
+
+        <div class="about-image reveal">
+         <img src="images/profile.jpg" alt="Profile">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="container">
+
+        <h2 class="gd-title reveal">Graphic Design</h2>
+
+        <p class="section-subtext reveal">
+          <span class="animate-text">
+            Design feels a lot like music to me, where rhythm, balance, and flow shape everything I create. 
+            I focus on turning ideas into visuals that feel natural, thoughtful, and engaging.
+          </span>
+        </p>
+
+        <div class="gallery-grid">
+
+          <div class="col">
+            <img src="images/image1.jpg" class="reveal">
+            <img src="images/image2.jpg" class="reveal">
+            <img src="images/image3.jpg" class="reveal">
+            <img src="images/image4.jpg" class="reveal">
+            <img src="images/image8.jpg" class="reveal">
+          </div>
+
+          <div class="col center">
+            <img src="images/image5.jpg" class="reveal">
+            <img src="images/image6.jpg" class="reveal">
+            <img src="images/image7.jpg" class="reveal">
+          </div>
+
+          <div class="col">
+            <img src="images/image2.jpg" class="reveal">
+            <img src="images/image3.jpg" class="reveal">
+            <img src="images/image4.jpg" class="reveal">
+            <img src="images/image1.jpg" class="reveal">
+            <img src="images/image9.jpg" class="reveal">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BRAND -->
+    <section class="brand-section">
+      <div class="container brand-container">
+
+        <div class="brand-left">
+          <img src="images/BurntPalette.png" alt="Burnt Palette Logo">
+        </div>
+
+        <div class="brand-right">
+          <p>
+            Burnt Palette is my Instagram space where I share my graphic design work and creative explorations.
+          </p>
+
+          <a href="https://instagram.com/burnt_palette" target="_blank" class="visit-btn">
+            <span>Visit Instagram</span>
+            <div class="arrow-circle">&#8599;</div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCT DESIGN -->
+    <section class="product-section">
+      <div class="container">
+
+        <h2 class="product-title reveal">Product Design</h2>
+
+        <p class="section-subtext reveal">
+          <span class="animate-text">
+            Some of my recent work in product design.
+          </span>
+        </p>
+
+        <div class="product-grid">
+
+          <div class="product-item">
+            <a href="https://core-website-swart.vercel.app/" target="_blank" class="product-card">
+              <img src="images/core.jpg" alt="Core Clothing">
+            </a>
+            <p class="product-label">Core Clothing</p>
+          </div>
+
+          <div class="product-item">
+            <a href="https://headphones-iota.vercel.app/" target="_blank" class="product-card">
+              <img src="images/auren.jpg" alt="Auren Audio">
+            </a>
+            <p class="product-label">Auren Audio</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow"></div>
+
+  <!-- INTRO FIX -->
+  <script>
+    setTimeout(() => {
+      const intro = document.querySelector(".intro");
+      if (intro) intro.style.display = "none";
+    }, 2000);
+  </script>
+
+  <!-- MAIN SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- FINAL SIGNATURE SECTION -->
+<section class="signature-section">
+
+  <!-- BIG BACKGROUND TEXT -->
+  <div class="signature-bg">Aarush</div>
+
+</section>

@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+
+  background: linear-gradient(
+    -45deg,
+    #000000,
+    #0a0a0a,
+    #111111,
+    #050505
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+/* ================= INTRO ================= */
+.intro {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.intro-text {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1400px;   /* 🔥 increased width */
+  margin: auto;
+  padding: 0 40px;
+}
+
+
+
+
+
+
+/* ================= ABOUT (PREMIUM STYLE) ================= */
+
+.about {
+  padding: 140px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+/* TEXT SIDE */
+.about-text {
+  flex: 1;
+  max-width: 480px;
+}
+
+/* TAG */
+.tag {
+  color: #ff6a00;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* MAIN HEADING */
+.about-text h1 {
+  font-size: 72px;          /* 🔥 bigger */
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+/* SUBHEADING */
+.subheading {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.description {
+  font-size: 15px;
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* CONTACT */
+.about-contact p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+/* FIX LINK COLOR */
+.about-contact a {
+  color: #aaa;              /* grey like text */
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.about-contact a:hover {
+  color: #fff;              /* white on hover */
+}
+
+/* ================= IMAGE (KEY CHANGE) ================= */
+
+.about-image {
+  flex: 1.2; /* 🔥 makes image bigger than text */
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 520px;
+  height: 680px;
+  object-fit: cover;
+  border-radius: 28px;
+
+  box-shadow: 0 50px 120px rgba(0, 0, 0, 0.9);
+}
+/* ================= GALLERY ================= */
+
+.gallery {
+  padding: 120px 0;
+}
+
+.gd-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: start; /* 🔥 critical */
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 🔥 KEY FIX */
+.col img {
+  width: 100%;
+  height: auto; /* IMPORTANT */
+  object-fit: contain;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.col img:hover {
+  transform: scale(1.04);
+}
+
+/* 🔥 STICKY CENTER */
+.center {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= CURSOR GLOW ================= */
+
+.cursor-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 200, 80, 0.35) 0%, rgba(255, 140, 0, 0.2) 40%, transparent 70%);
+  filter: blur(60px);
+  transform: translate(-50%, -50%);
+  z-index: 99999; /* 🔥 VERY IMPORTANT */
+}
+
+/* ================= BRAND SECTION ================= */
+
+.brand-section {
+  padding: 140px 0;
+  background: transparent;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+/* LEFT LOGO */
+.brand-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-left img {
+  width: 500px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* RIGHT CONTENT */
+.brand-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+.brand-right p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cfcfcf;
+  margin-bottom: 30px;
+}
+
+/* 🔥 GLOW BUTTON */
+.visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 14px 10px 22px;
+  border-radius: 999px;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.visit-btn:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+.arrow-circle {
+  width: 44px;          /* bigger circle */
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff9a00, #ff5e00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;      /* 🔥 bigger arrow */
+  font-weight: bold;
+  box-shadow: 0 0 18px rgba(255, 140, 0, 0.9);
+  transition: all 0.3s ease;
+}
+
+.visit-btn:hover .arrow-circle {
+  box-shadow: 0 0 20px rgba(255, 140, 0, 1);
+  transform: rotate(15deg);
+}
+
+/* ================= PRODUCT SECTION ================= */
+
+.product-section {
+  padding: 140px 0;
+  background: transparent;
+}
+
+.product-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* spacing between cards */
+}
+
+/* ITEM WRAPPER */
+.product-item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* CARD */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  height: 520px;
+  width: 100%; /* 🔥 FULL WIDTH */
+  display: block;
+  background: #111;
+
+  box-shadow: 
+    0 30px 80px rgba(0,0,0,0.7),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+
+  transition: all 0.4s ease;
+}
+
+/* IMAGE */
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 40px 100px rgba(0,0,0,0.9),
+    0 0 40px rgba(255, 150, 0, 0.15);
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+/* LABEL BELOW */
+.product-label {
+  font-size: 26px;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin-left: 10px;
+  letter-spacing: -0.3px;
+}
+
+/* 🔥 HOVER TEXT EFFECT */
+.product-item:hover .product-label {
+  color: #ff9a00;
+  transform: translateX(6px);
+}
+
+/* ================= SECTION SUBTEXT ================= */
+
+.section-subtext {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #9ca3af;
+
+  margin-top: 10px;
+  margin-bottom: 60px; /* 🔥 THIS FIXES YOUR GAP */
+}
+
+/* TEXT ANIMATION */
+
+.animate-text span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.animate-text span.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= SIGNATURE SECTION ================= */
+
+/* ================= SIGNATURE SECTION ================= */
+
+.signature-section {
+  position: relative;
+  height: 100vh;
+  background:transparent;
+  overflow: hidden;
+}
+
+/* BIG FADED BACKGROUND TEXT */
+.signature-bg {
+  position: absolute;
+  font-size: 20vw;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* LEFT ALIGNED NAME */
+.signature-left {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.signature-left h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* BOTTOM RIGHT CONTACT */
+.signature-contact {
+  position: absolute;
+  right: 80px;
+  bottom: 60px;
+  text-align: right;
+}
+
+.signature-contact p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+/* FIX LINK COLORS */
+.signature-contact a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.signature-contact a:hover {
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.about-text h1,
+.gd-title,
+.product-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+
+  font-size: 72px;
+  line-height: 1.1;
+
+  background: linear-gradient(180deg, #ffffff, #888888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: -1px;
+}
+
+/* ================= FORCE RUBIK ================= */
+
+p,
+.description,
+.section-subtext,
+.about-contact p,
+.about-contact a {
+  font-family: 'Rubik', sans-serif !important;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #b5b5b5;
+}
