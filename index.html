@@ -17,35 +17,18 @@
   </div>
 
   <main>
-    <!-- (your entire existing content stays SAME) -->
-  </main>
 
-  <!-- ✅ ADD THIS SCRIPT -->
-  <script>
-    window.addEventListener("load", () => {
-      const intro = document.querySelector(".intro");
-      intro.classList.add("fade-out");
-    });
-  </script>
-
-</body>
-
-  <main>
-
-    <!-- ✅ FIXED ABOUT SECTION -->
+    <!-- ABOUT -->
     <section class="about">
       <div class="container about-container">
 
-        <!-- TEXT -->
         <div class="about-text reveal">
           <p class="tag">About me</p>
 
           <h1>
-            
             Designer<br>
             Strategist.<br>
             Creative partner.
-            
           </h1>
 
           <h3 class="subheading">
@@ -57,14 +40,14 @@
           </p>
 
           <div class="about-contact">
-           <p>Phone no: +91 9182372506</p>
-           <p>email id: <a href="mailto:aarushpramit061205@gmail.com">aarushpramit061205@gmail.com</a></p>
-           <p>Linkedin: <a href=" https://www.linkedin.com/in/aarush-pramit-880794281/" target="_blank">https://www.linkedin.com/in/aarush-pramit-880794281/</a></p>
-        </div>
+            <p>Phone: +91 9182372506</p>
+            <p>Email: <a href="mailto:aarushpramit061205@gmail.com">aarushpramit061205@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aarush-pramit-880794281/" target="_blank">Profile</a></p>
+          </div>
         </div>
 
         <div class="about-image reveal">
-         <img src="images/profile.jpg" alt="Profile">
+          <img src="images/profile.jpg" alt="Profile">
         </div>
 
       </div>
@@ -77,10 +60,7 @@
         <h2 class="gd-title reveal">Graphic Design</h2>
 
         <p class="section-subtext reveal">
-          <span class="animate-text">
-            Design feels a lot like music to me, where rhythm, balance, and flow shape everything I create. 
-            I focus on turning ideas into visuals that feel natural, thoughtful, and engaging.
-          </span>
+          Design feels a lot like music to me, where rhythm, balance, and flow shape everything I create.
         </p>
 
         <div class="gallery-grid">
@@ -89,21 +69,16 @@
             <img src="images/image1.jpg" class="reveal">
             <img src="images/image2.jpg" class="reveal">
             <img src="images/image3.jpg" class="reveal">
-            <img src="images/image4.jpg" class="reveal">
-            <img src="images/image8.jpg" class="reveal">
           </div>
 
           <div class="col center">
             <img src="images/image5.jpg" class="reveal">
             <img src="images/image6.jpg" class="reveal">
-            <img src="images/image7.jpg" class="reveal">
           </div>
 
           <div class="col">
-            <img src="images/image2.jpg" class="reveal">
-            <img src="images/image3.jpg" class="reveal">
-            <img src="images/image4.jpg" class="reveal">
-            <img src="images/image1.jpg" class="reveal">
+            <img src="images/image7.jpg" class="reveal">
+            <img src="images/image8.jpg" class="reveal">
             <img src="images/image9.jpg" class="reveal">
           </div>
 
@@ -112,52 +87,24 @@
       </div>
     </section>
 
-    <!-- BRAND -->
-    <section class="brand-section">
-      <div class="container brand-container">
-
-        <div class="brand-left">
-          <img src="images/BurntPalette.png" alt="Burnt Palette Logo">
-        </div>
-
-        <div class="brand-right">
-          <p>
-            Burnt Palette is my Instagram space where I share my graphic design work and creative explorations.
-          </p>
-
-          <a href="https://instagram.com/burnt_palette" target="_blank" class="visit-btn">
-            <span>Visit Instagram</span>
-            <div class="arrow-circle">&#8599;</div>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PRODUCT DESIGN -->
+    <!-- PRODUCT -->
     <section class="product-section">
       <div class="container">
 
         <h2 class="product-title reveal">Product Design</h2>
 
-        <p class="section-subtext reveal">
-          <span class="animate-text">
-            Some of my recent work in product design.
-          </span>
-        </p>
-
         <div class="product-grid">
 
-          <div class="product-item">
+          <div class="product-item reveal">
             <a href="https://core-website-swart.vercel.app/" target="_blank" class="product-card">
-              <img src="images/core.jpg" alt="Core Clothing">
+              <img src="images/core.jpg">
             </a>
             <p class="product-label">Core Clothing</p>
           </div>
 
-          <div class="product-item">
+          <div class="product-item reveal">
             <a href="https://headphones-iota.vercel.app/" target="_blank" class="product-card">
-              <img src="images/auren.jpg" alt="Auren Audio">
+              <img src="images/auren.jpg">
             </a>
             <p class="product-label">Auren Audio</p>
           </div>
@@ -169,27 +116,10 @@
 
   </main>
 
-  <!-- CURSOR GLOW -->
+  <!-- CURSOR -->
   <div class="cursor-glow"></div>
 
-  <!-- INTRO FIX -->
-  <script>
-    setTimeout(() => {
-      const intro = document.querySelector(".intro");
-      if (intro) intro.style.display = "none";
-    }, 2000);
-  </script>
-
-  <!-- MAIN SCRIPT -->
   <script src="script.js"></script>
 
 </body>
 </html>
-
-<!-- FINAL SIGNATURE SECTION -->
-<section class="signature-section">
-
-  <!-- BIG BACKGROUND TEXT -->
-  <div class="signature-bg">Aarush</div>
-
-</section>
