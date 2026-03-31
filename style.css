@@ -496,3 +496,14 @@ p {
   line-height: 1.8;
   color: #b5b5b5;
 }
+
+/* FIX: reveal active */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* INTRO FADE */
+.intro {
+  transition: opacity 0.8s ease;
+}
